@@ -8,10 +8,10 @@ The code is written in Java version 1.8.0_131, and requires:
 - [MASON simulator](https://cs.gmu.edu/~eclab/projects/mason/)
 
 ## Simulation Environment
-This simulator encodes all the dynamics as they are described in the previous sections, where each agent points and moves in the direction of its current velocity vector. We made a few alterations to the the MASON Flockers domain, such that they will fit our needs. It was initially altered to also contain <em>diverting agents<\em>. Another modification was making the <em>flocking agents<\em> update their orientation according to the average orientation of all agents in their respective neighborhood at time step t. For more realistic implications of the simulator, its toroidal feature was removed. That is, if an agent moves off of an edge of our domain, it will not reappear and will remain <em>"lost"</em> forever.
+This simulator encodes all the dynamics as they are described in the previous sections, where each agent points and moves in the direction of its current velocity vector. We made a few alterations to the the MASON Flockers domain, such that they will fit our needs. It was initially altered to also contain <em>diverting agents</em>. Another modification was making the <em>flocking agents</em> update their orientation according to the average orientation of all agents in their respective neighborhood at time step t. For more realistic implications of the simulator, its toroidal feature was removed. That is, if an agent moves off of an edge of our domain, it will not reappear and will remain <em>"lost"</em> forever.
 
 ### Placement Methods
-For guaranteeing that the <em>flocking<\em> neighbors graph does indeed consist of a specific number of connected components, we consider the <em>grid placement method<\em> and the <em>random placement method<\em> proposed in the paper ["Converging to a Desired Orientation in a Flock of Agents"](https://arxiv.org/abs/2010.04686), according to which each pair of successive flocking agents are within a radius of at most R from each other.
+For guaranteeing that the <em>flocking</em> neighbors graph does indeed consist of a specific number of connected components, we consider the <em>grid placement method</em> and the <em>random placement method</em> proposed in the paper ["Converging to a Desired Orientation in a Flock of Agents"](https://arxiv.org/abs/2010.04686), according to which each pair of successive flocking agents are within a radius of at most R from each other.
 
 ### Concept
 The three main files are as follows:
