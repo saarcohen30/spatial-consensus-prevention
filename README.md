@@ -15,23 +15,23 @@ For guaranteeing that the <em>flocking</em> neighbors graph does indeed consist 
 
 ### Concept
 The three main files are as follows:
-- <code>Flocker.java</code> - Encodes a single agent (either a flocking agent or a diverting agent) by implementing the 'sim.engine.Steppable' interface.
-- <code>Flockers.java</code> - Each model situated in the MASON simulator is entirely encapsulated in a special object called 'sim.engine.SimState'. As such, this module sets up the flockers' field, in accordance to the user's inputs provided through the console.
-- <code>FlockerWithUI.java</code> - All GUI elements in a visualized MASON model are also encapsulated by an instance of a subclass of 'sim.display.GUIState'. The 'GUIState' object knows about the 'SimState' model object, but not the other way around, and ultimately encapsulates all the elements mentioned in the 'SimState' model object to visualize and control the model.
+- <code>Flocker.java</code> - Encodes a single agent (either a flocking agent or a diverting agent) by implementing the `sim.engine.Steppable` interface.
+- <code>Flockers.java</code> - Each model situated in the MASON simulator is entirely encapsulated in a special object called `sim.engine.SimState`. As such, this module sets up the flockers' field, in accordance to the user's inputs provided through the console.
+- <code>FlockerWithUI.java</code> - All GUI elements in a visualized MASON model are also encapsulated by an instance of a subclass of `sim.display.GUIState`. The `GUIState` object knows about the `SimState` model object, but not the other way around, and ultimately encapsulates all the elements mentioned in the 'SimState' model object to visualize and control the model.
 
 ### Execution
 1. Import [MASON](https://cs.gmu.edu/~eclab/projects/mason/) into Eclipse (or any other IDE of your choice).
-2. Replace all three files, situated under the 'sim.app.flockers' class, which can be founde under the found under the following sub-directory: '/mason/src/main/java/sim/app/flockers/'.
-3. Execute MASON's console and select the 'Flockers' simulation environement.
-4. Under the 'Flockers' simulation environement, the following can be performed:
-	1. Under the 'Console' tab, various parameters regarding the speed of the simulation's execution can be altered in regard with the user's choice.
-	2. Under the 'Model' tab, the baseline settings for variables can also be altered, including:
+2. Replace all three files, situated under the `sim.app.flockers` class, which can be founde under the found under the following sub-directory: `/mason/src/main/java/sim/app/flockers/`.
+3. Execute MASON's console and select the `Flockers` simulation environement.
+4. Under the `Flockers` simulation environement, the following can be performed:
+	1. Under the `Console` tab, various parameters regarding the speed of the simulation's execution can be altered in regard with the user's choice.
+	2. Under the `Model` tab, the baseline settings for variables can also be altered, including:
 		1. Domain height and width
 		2. Agent velocity
 		3. Visibility radius
 		4. Placement method, which can be either "grid" or "random".
 		5. Number of consequent executions
 		6. Number of flocking agents per each connected component - the simulation supports three different abstract scenarios:
-			1. 'equal' - All connected components consist of an equal nubmer of flocking agents. Reagarding this scenario, the number of flocking agents shall be also specified.
-			2. 'i X m' - The i-th connected component consists of 'i X m' flocking agents, where 'm' denotes the number of diverting agents.
-			3. 'i X 10' (Default) - The i-th connected component consists of 'i X 10' flocking agents.
+			1. `equal` - All connected components consist of an equal nubmer of flocking agents. Reagarding this scenario, the number of flocking agents shall be also specified.
+			2. `i X m` - The i-th connected component consists of `i X m` flocking agents, where `m` denotes the number of diverting agents.
+			3. `i X 10` (Default) - The i-th connected component consists of `i X 10` flocking agents.
