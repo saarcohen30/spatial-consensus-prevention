@@ -29,7 +29,7 @@ The three main files are as follows:
 		1. Domain height and width
 		2. Agent velocity
 		3. Visibility radius
-		4. Placement method, which can be either "grid" or "random".
+		4. Placement method, which can be either `grid` or `random`.
 		5. Number of consequent executions
 		6. Number of flocking agents per each connected component - the simulation supports three different abstract scenarios:
 			1. `equal` - All connected components consist of an equal nubmer of flocking agents. Reagarding this scenario, the number of flocking agents shall be also specified.
