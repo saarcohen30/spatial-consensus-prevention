@@ -1,7 +1,7 @@
 # Spatial Consensus-Prevention in Robotic Swarms - Implementation in the MASON Flockers domain
 Code for implementation of the consensus-prevention settings in the <a href="https://cs.gmu.edu/~eclab/projects/mason/">MASON simulator</a>, demonstrating the impact of the number of diverting agents on the disagreement measure in different scenarios. If any part of this code is used, the following paper must be cited: 
 
-**Saar Cohen and Noa Agmon. Spatial Consensus-Prevention in Robotic Swarms. <em>In AAMAS'21: Proceedings of the 20th International Conference on Autonomous Agents and Multiagent Systems, 2021</em>.**
+[**Saar Cohen and Noa Agmon. Spatial Consensus-Prevention in Robotic Swarms. <em>In AAMAS'21: Proceedings of the 20th International Conference on Autonomous Agents and Multiagent Systems, 2021</em>.**](https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p359.pdf)
 
 ## Dependencies
 The code is written in Java version 1.8.0_131, and requires:
